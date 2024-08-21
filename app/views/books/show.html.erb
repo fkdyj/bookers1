@@ -1,0 +1,19 @@
+<div class="congratulation">
+  <%= flash[:notice] %>
+</div>
+
+<div class="show-tb">
+<h3>Title:</h3>
+<p class="show-p"><%= @book.title %></p>
+</div>
+
+<div class="show-tb2">
+<h3>Body:</h3>
+<p class="show-p"><%= @book.body %></p>
+</div>
+
+
+<div class="edit-back">
+<%= link_to "Edit", "/books/#{@book.id}/edit" %>&nbsp|&nbsp
+<%= link_to "Back", "/books" %>
+</div>
